@@ -35,6 +35,7 @@ if res.status_code == 200:
             }
             varlist.append(vardict)
     print(varlist)
+    
     # 写入数据
     with open("./yq.txt","w",encoding="utf-8") as f:
         f.write(str(varlist))
