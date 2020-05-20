@@ -27,7 +27,7 @@ Gorit 的 Python 学习记录
 #### 5.1 Web 框架 Django
 1. 参考网上教程，实现了一个简易博客系统
 
-#### 5.2 Web 框架 Django
+#### 5.2 Web 框架 Flask
 1. 业余开发了一个 web 聊天机器人
 2. Flask 开发微信公众号
 
