@@ -23,11 +23,11 @@ var _systemPath 		= "";
 var _stylePath 			= "/zftal-ui-v5-1.0.2";
 </script>
 <!--jQuery核心框架库 -->
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/other_jquery/jquery.min.js?ver=20170713"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/other_jquery/jquery.min.js?ver=20200407"></script>
 <!--jQuery常用工具扩展库：基础工具,资源加载工具,元素尺寸相关工具 -->
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.utils.contact-min.js?ver=20170713" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/zftal/jquery.utils.contact-min.js?ver=20200407" charset="utf-8"></script>
 <!--jQuery浏览器检测 -->
-<script type="text/javascript" src="/js/browse/browse-judge.js?ver=20170713"></script>
+<script type="text/javascript" src="/js/browse/browse-judge.js?ver=20200407"></script>
 <script type="text/javascript">
 	//\u6d4f\u89c8\u5668\u7248\u672c\u9a8c\u8bc1
 	/*var broswer = broswer();
@@ -40,21 +40,21 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 	}*/
 </script>
 <!--Bootstrap布局框架-->
-<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/css/bootstrap.min.css?ver=20170713" />
-<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/css/zftal-ui.css?ver=20170713" />
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/js/bootstrap.min.js?ver=20170713" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/css/bootstrap.min.css?ver=20200407" />
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/css/zftal-ui.css?ver=20200407" />
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/bootstrap/js/bootstrap.min.js?ver=20200407" charset="utf-8"></script>
 <!--jQuery.chosen美化插件-->
-<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/plugins/chosen/css/chosen-min.css?ver=20170713" />
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/chosen/jquery.choosen.concat-min.js?ver=20170713" charset="utf-8"></script>
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/chosen/lang/zh_CN-min.js?ver=20170713" charset="utf-8"></script>
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/utils/jquery.utils.pinyin.min.js?ver=20170713" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="/zftal-ui-v5-1.0.2/assets/plugins/chosen/css/chosen-min.css?ver=20200407" />
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/chosen/jquery.choosen.concat-min.js?ver=20200407" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/plugins/chosen/lang/zh_CN-min.js?ver=20200407" charset="utf-8"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/utils/jquery.utils.pinyin.min.js?ver=20200407" charset="utf-8"></script>
 <!--业务框架jQuery全局设置和通用函数库-->
-<script type="text/javascript" src="/js/jquery.zftal.contact-min.js?ver=20170713"></script>
+<script type="text/javascript" src="/js/jquery.zftal.contact-min.js?ver=20200407"></script>
 <!--业务框架前端脚本国际化库-->
-<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/zftal/lang/jquery.zftal_zh_CN-min.js?ver=20170713"></script>
+<script type="text/javascript" src="/zftal-ui-v5-1.0.2/assets/js/zftal/lang/jquery.zftal_zh_CN-min.js?ver=20200407"></script>
 <!--[if lt IE 9]>
-<script src="/zftal-ui-v5-1.0.2/assets/js/html5shiv.min.js?ver=20170713" type="text/javascript" charset="utf-8"></script>
-<script src="/zftal-ui-v5-1.0.2/assets/js/respond.min.js?ver=20170713" type="text/javascript" charset="utf-8"></script>
+<script src="/zftal-ui-v5-1.0.2/assets/js/html5shiv.min.js?ver=20200407" type="text/javascript" charset="utf-8"></script>
+<script src="/zftal-ui-v5-1.0.2/assets/js/respond.min.js?ver=20200407" type="text/javascript" charset="utf-8"></script>
 <![endif]-->
 	
 			<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
@@ -134,6 +134,19 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 		.nav-tabs{ border:none; }
 		
 		.tipsqrcode{ line-height:20px}
+		
+		.captcha_wrapper{
+			padding:0 15px;
+			height:245px; 
+		}
+		
+		.zfdun_container{
+			height:245px;
+		}
+		
+		.zfdun{
+			height:245px;
+		}
 	</style>
 </head>
 <body style="background:#fafafa;">
@@ -141,6 +154,7 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 <input type = "hidden" name = "mmsfjm" id = "mmsfjm" value = 1>
 <input type = "hidden" name = "mmsrddcshkzfs" id = "mmsrddcshkzfs" value = 0>
 <input type = "hidden" name = "dlsbsdsj" id = "dlsbsdsj" value = 3>
+<input type="hidden" name="sfqytpyz" value="0" id="sfqytpyz"/>
 <input type = "hidden" name = "sfxswechatlogin" id = "sfxswechatlogin" value = 0>
 <input type = "hidden" name = "scene_id" id = "scene_id" value = >
 
@@ -165,7 +179,7 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 			</div>			
 			<div class="col-sm-4 sl_log_rt">
 					<form class="form-horizontal" role="form" action="/xtgl/login_slogin.html" method="post">
-					<input type="hidden" id="csrftoken" name="csrftoken" value="7662b98b-b60f-4b90-8167-caf3f60d8cf5,7662b98bb60f4b908167caf3f60d8cf5"/>
+					<input type="hidden" id="csrftoken" name="csrftoken" value="eb385a8f-09d2-4a92-a462-a90cb53616bb,eb385a8f09d24a92a462a90cb53616bb"/>
 					<div>
 						
 						<div class="tab-content">
@@ -199,6 +213,8 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 								
 								<!-- 0-弹出验证码-->
 									
+										
+									
 								
 								
 								<div class="form-group"> 
@@ -210,7 +226,7 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 									
 									   <a href="/pwdmgr/retake/index.zf" id="wjmm" class="checkbox pull-right " target="_blank">忘记密码了？</a>
 									
-								</div>
+								</div>								
 								<div class="form-group">
 									<button type="button" class="btn btn-primary btn-block" id="dl">登 录</button>
 								</div>		
@@ -449,10 +465,10 @@ var _stylePath 			= "/zftal-ui-v5-1.0.2";
 
 	});
 </script>
-<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/jsbn.js?ver=20170713"></script>
-<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/prng4.js?ver=20170713"></script>
-<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/rng.js?ver=20170713"></script>
-<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/rsa.js?ver=20170713"></script>
-<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/base64.js?ver=20170713"></script>
-<script type="text/javascript" src="/js/globalweb/login/login.js?ver=20170713"></script>
+<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/jsbn.js?ver=20200407"></script>
+<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/prng4.js?ver=20200407"></script>
+<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/rng.js?ver=20200407"></script>
+<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/rsa.js?ver=20200407"></script>
+<script type='text/javascript' src="/zftal-ui-v5-1.0.2/assets/plugins/crypto/rsa/base64.js?ver=20200407"></script>
+<script type="text/javascript" src="/js/globalweb/login/login.js?ver=20200407"></script>
 </html>

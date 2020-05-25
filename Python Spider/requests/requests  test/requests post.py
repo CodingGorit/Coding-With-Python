@@ -1,11 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-#file: 03 request post.py
+#file: requests post.py
 #@author: Gorit
 #@contact: gorit@qq.com
 #@time: 2020/1/18 19:53
 
+'''
+    模拟百度翻译
+'''
+
 import requests
+
 def get_url_content(url,data):
     headers = {
         "User-Agent": "Mozilla/5.0 (X11; OpenBSD i386) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
